@@ -36,6 +36,9 @@ async function bulkPostcodeLookup(postcodes: any[]) {
         postcode: result.result.postcode,
         latitude: result.result.latitude,
         longitude: result.result.longitude,
+        adminDistrict: result.result.codes.admin_district,
+        msoa: result.result.codes.msoa,
+        lsoa: result.result.codes.lsoa,
       })));
 }
 
@@ -46,11 +49,14 @@ const lookupLocations = async (companyData: any) => {
   const locations = await bulkPostcodeLookup(postcodes);
 
   return companyData.map((company: any) => {
-    const { longitude, latitude } = locations
+    const { longitude, latitude, adminDistrict, msoa, lsoa } = locations
       .find((location: any) => location.postcode === company['UK Postcode'])
     return {
       ...company,
-      coordinates: [ longitude, latitude ]
+      coordinates: [ longitude, latitude ],
+      adminDistrict,
+      msoa,
+      lsoa,
     }
   })
 };
@@ -64,7 +70,10 @@ const createGeoJsonFeature = (company: any) => ({
   properties: {
     name: company['Organisation'],
     category: company['Category (Users, Enablers, Stewards)'],
-    preliminary_category: company['Preliminary Category']
+    preliminary_category: company['Preliminary Category'],
+    admin_district: company.adminDistrict,
+    msoa: company.msoa,
+    lsoa: company.lsoa,
   }
 });
 
