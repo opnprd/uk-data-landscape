@@ -169,7 +169,7 @@ Public services,Data Stewards,Smart Energy,,,,,
 ,,Open Data Services Co-operative Limited,,Open Data Services Co-operative Limited,09506232,https://opendataservices.coop/,
 Users/External,Data Users,Third party applications,,,,,
 Users/External,Data Users,mySociety,,mySociety,03277032,http://mysociety.org/,
-Users/External,Data Users,House of Commons Library,,,,,
+Users/External,Data Users,House of Commons Library,,,,,SW1A 0AA
 Users/External,Data Users,Institute for Government,,Institute for Government,06480524,http://instituteforgovernment.org.uk/,
 Users/External,Data Users,Full Fact,,Full Fact,06975984,http://fullfact.org/,
 Users/External,Data Users,Users within government,,,,,
@@ -190,8 +190,8 @@ Users/External,Data Users,Open Ownership,,,,,
 Users/External,Data Users,Spend Network,Businesses,TICON UK LIMITED,04962733,http://spendnetwork.com/,
 Users/External,Data Users,Citymapper,Businesses,CITYMAPPER LIMITED,07370388,http://citymapper.com/,
 Users/External,Data Users,Nesta,,,08580327,,
-Users/External,Data Users,King's policy institute,,,,,
-Users/External,Data Users,Bristish Computer Society,,,,,
+Users/External,Data Users,King's policy institute,,,,,WC2R 2LS
+Users/External,Data Users,Bristish Computer Society,,,,,"SN1 1BY,EC2R 7BP"
 Users/External,Data Users,Bank of England,,Bank of England,RC000042,https://www.bankofengland.co.uk/,
 Users/External,Data Users,Statistics User Forum,,,,,
 National Security,Data Stewards,GCHQ,,,,https://www.gchq.gov.uk/,
@@ -203,12 +203,12 @@ Standards,Data Stewards,https://data.gov.uk/education-standards/,,,,,
 Standards,Data Stewards,INSPIRE Regulations 2009,,,,,
 Standards,Data Stewards,INSPIRE Regulations (Scotland) 2009,,,,,
 Collectors,,The many people who collect it (think clipboards etc),,,,,
-[Floating Cards],Data Enablers,British Academy,Especially Work on Data Ethics,,,,
+[Floating Cards],Data Enablers,British Academy,Especially Work on Data Ethics,,,,SW1Y 5AH
 [Floating Cards],Data Enablers,Royal Society,Especially Work on Data Ethics,Royal Society,RC000519,http://royalsociety.org/,
-[Floating Cards],Data Enablers,OneTeamGov,,,,https://www.oneteamgov.uk/,
+[Floating Cards],Data Enablers,OneTeamGov,,,,https://www.oneteamgov.uk/,SW1H 9AJ
 [Floating Cards],Data Enablers,UKGovCamp,,,,,
-[Floating Cards],Data Enablers,What Works Centres,,,,https://www.whatworksnetwork.org.uk/,
-[Floating Cards],Data Enablers,Infrastructure and Projects Authority,,,,https://www.gov.uk/government/organisations/infrastructure-and-projects-authority,
+[Floating Cards],Data Enablers,What Works Centres,,,,https://www.whatworksnetwork.org.uk/,SW1H 9EA
+[Floating Cards],Data Enablers,Infrastructure and Projects Authority,,,,https://www.gov.uk/government/organisations/infrastructure-and-projects-authority,SW1A 2AS
 [Floating Cards],Data Enablers,Open Innovation Team,,,,https://openinnovation.blog.gov.uk/about-this-blog/,
 [Floating Cards],Data Enablers,Open Data Camp,,,,https://www.odcamp.uk/,
 [Floating Cards],Data Enablers,OpenStreetMap UK (OSMUK),Access to UK community and free/paid developers,,,https://osmuk.org/,
