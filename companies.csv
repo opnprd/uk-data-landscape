@@ -88,16 +88,17 @@ Operational,Data Stewards,"NI Department of Agriculture, Environment and Rural A
 Operational,Data Stewards,Joint Biosecurity Centre,,,,,
 Operational,Data Stewards,Local authority,,,,,
 Operational,Data Stewards,Geospatial commissions,,,,,
-Operational,Data Stewards,Department for international trade (DIT),,,,,
-Operational,Data Stewards,Network Rail/Rail Delivery Group,,Network Rail Ltd,04402220,https://www.networkrail.co.uk/,
+Operational,Data Stewards,Department for international trade (DIT),,,,,SW1A 2DY
+Operational,Data Stewards,Network Rail,,Network Rail Ltd,04402220,https://www.networkrail.co.uk/,NW1 2DN
+Operational,Data Stewards,Rail Delivery Group,,RAIL DELIVERY GROUP LIMITED,08176197,https://www.raildeliverygroup.com/,EC1A 4HD
 Public bodies (Subgroup of Operational),Data Stewards,Centre for Data Ethics and Innovation,,,,,
-Public bodies (Subgroup of Operational),Data Stewards,HM Land registry,Geospatial,,,,
-Public bodies (Subgroup of Operational),Data Stewards,Ordnance Survey,Geospatial,ORDNANCE SURVEY LIMITED,09121572,https://ordnancesurvey.co.uk/,
-Public bodies (Subgroup of Operational),Data Stewards,UK Hydrographic Office,Geospatial,,,,
-Public bodies (Subgroup of Operational),Data Stewards,British Geological Survey,Geospatial,,,https://www.admiralty.co.uk/ukho/About-Us,
+Public bodies (Subgroup of Operational),Data Stewards,HM Land registry,Geospatial,,,,CR0 2AQ
+Public bodies (Subgroup of Operational),Data Stewards,Ordnance Survey,Geospatial,ORDNANCE SURVEY LIMITED,09121572,https://ordnancesurvey.co.uk/,SO16 0AS
+Public bodies (Subgroup of Operational),Data Stewards,UK Hydrographic Office,Geospatial,,,,TA1 2DN
+Public bodies (Subgroup of Operational),Data Stewards,British Geological Survey,Geospatial,,,https://www.admiralty.co.uk/ukho/About-Us,NG12 5GG
 Public bodies (Subgroup of Operational),Data Stewards,Valuation Office Agency,Geospatial,,,,
-Public bodies (Subgroup of Operational),Data Stewards,Coal Authority,Geospatial,,,,
-Public bodies (Subgroup of Operational),Data Stewards,GeoPlace LLP,Geospatial,GeoPlace LLP,OC359627,http://geoplace.co.uk/,
+Public bodies (Subgroup of Operational),Data Stewards,Coal Authority,Geospatial,,,,NG18 4RG
+Public bodies (Subgroup of Operational),Data Stewards,GeoPlace LLP,Geospatial,GeoPlace LLP,OC359627,http://geoplace.co.uk/,SW1W 9SZ
 Public bodies (Subgroup of Operational),Data Stewards,Met Office,Data-driven organisations,,,,
 Public bodies (Subgroup of Operational),Data Stewards,Food Standards Agency,Data-driven organisations,,,https://www.food.gov.uk/,
 Public bodies (Subgroup of Operational),Data Stewards,Companies House,Data-driven organisations,,,,
