@@ -18,18 +18,18 @@ Each feature has the same format
 
 ```json
 {
-  type: "Feature",
-  geometry: {
-    type: "Point",
-    coordinates: [longitude, latitude]
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [longitude, latitude]
   },
-  properties: {
-    name: name of the organisation,
-    category: data stewards / data enablers / data users,
-    preliminary_category: category consistent with Gavin Freeguard's work,
-    admin_district: Local Administrative Units (LAUs) level 1 code,
-    msoa: Middle Layer Super Output Area,
-    lsoa: Lower Layer Super Output Area,
+  "properties": {
+    "name": name of the organisation,
+    "category": data stewards / data enablers / data users,
+    "preliminary_category": category consistent with Gavin Freeguard's work,
+    "admin_district": Local Administrative Units (LAUs) level 1 code,
+    "msoa": Middle Layer Super Output Area,
+    "lsoa": Lower Layer Super Output Area,
   }
 }
 ```
