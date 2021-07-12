@@ -134,10 +134,10 @@ GDS/Data Policy,Data Enabler,The National Archive Trust,,THE NATIONAL ARCHIVES T
 GDS/Data Policy,Data Enabler,Data Standards Authority,,,,,
 GDS/Data Policy,Data Enabler,UK government API catalogue ,https://alphagov.github.io/api-catalogue/#uk-government-apis,,,,
 GDS/Data Policy,Data Enabler,Geospatial Commission - National geospatial strategy,,,,,
-Producer/User/Commissioner,Data Enabler,UK Research and Innovation (UKRI),,,,,
+Producer/User/Commissioner,Data Enabler,UK Research and Innovation (UKRI),,,,,"SN2 1FL,EC4Y 0DS,BS34 8SR"
 Producer/User/Commissioner,Data Enabler,INSPIRE (spatial standards),,,,,
 Parliament,Data Stewards,Hansard,,,,,
-Parliament,Data Stewards,parliament.uk,,,,,
+Parliament,Data Stewards,parliament.uk,,,,,SW1A 0AA
 Parliament,Data Stewards,IPSA,,,,,
 Parliament,Data Stewards,data.parliament.uk,,,,,
 Parliament,Data Stewards,developer.parliament.uk,,,,,
