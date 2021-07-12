@@ -99,23 +99,22 @@ Public bodies (Subgroup of Operational),Data Stewards,British Geological Survey,
 Public bodies (Subgroup of Operational),Data Stewards,Valuation Office Agency,Geospatial,,,,
 Public bodies (Subgroup of Operational),Data Stewards,Coal Authority,Geospatial,,,,NG18 4RG
 Public bodies (Subgroup of Operational),Data Stewards,GeoPlace LLP,Geospatial,GeoPlace LLP,OC359627,http://geoplace.co.uk/,SW1W 9SZ
-Public bodies (Subgroup of Operational),Data Stewards,Met Office,Data-driven organisations,,,,
-Public bodies (Subgroup of Operational),Data Stewards,Food Standards Agency,Data-driven organisations,,,https://www.food.gov.uk/,
-Public bodies (Subgroup of Operational),Data Stewards,Companies House,Data-driven organisations,,,,
-Public bodies (Subgroup of Operational),Data Stewards,Cabinet Office ,Registrars,,,,
-Public bodies (Subgroup of Operational),Data Stewards,Food Standards Agency,Registrars,,,,
-Public bodies (Subgroup of Operational),Data Stewards,Foreign and Commonwealth Office,Registrars,,,,
-Public bodies (Subgroup of Operational),Data Stewards,Defra,Registrars,,,,
-Public bodies (Subgroup of Operational),Data Stewards,DWP,Registrars,,,,
-Public bodies (Subgroup of Operational),Data Stewards,MHCLG,Registrars,,,,
-Public bodies (Subgroup of Operational),Data Stewards,MoJ,Registrars,,,,
-Public bodies (Subgroup of Operational),Data Stewards,Ofqual,Registrars,,,,
-Public bodies (Subgroup of Operational),Data Stewards,Her Majesty's Passport Office,Registrars,,,,
-Public bodies (Subgroup of Operational),Data Stewards,ONS,Registrars,,,,
-Accountability,Data Stewards,PACAC,,,,,
+Public bodies (Subgroup of Operational),Data Stewards,Met Office,Data-driven organisations,,,,EX1 3PB
+Public bodies (Subgroup of Operational),Data Stewards,Food Standards Agency,Data-driven organisations,,,https://www.food.gov.uk/,SW1H 9EX
+Public bodies (Subgroup of Operational),Data Stewards,Companies House,Data-driven organisations,,,,"CF14 3UZ,BT2 8BG,EH3 9FF"
+Public bodies (Subgroup of Operational),Data Stewards,Cabinet Office ,Registrars,,,,SW1A 2AS
+Public bodies (Subgroup of Operational),Data Stewards,"Foreign, Commonwealth and Development Office",Registrars,,,,SW1A 2AH
+Public bodies (Subgroup of Operational),Data Stewards,Defra,Registrars,,,,SW1P 4DF
+Public bodies (Subgroup of Operational),Data Stewards,DWP,Registrars,,,,SW1P 4DF
+Public bodies (Subgroup of Operational),Data Stewards,MHCLG,Registrars,,,,SW1P 4DF
+Public bodies (Subgroup of Operational),Data Stewards,MoJ,Registrars,,,,SW1H 9AJ
+Public bodies (Subgroup of Operational),Data Stewards,Ofqual,Registrars,,,,CV1 3BH
+Public bodies (Subgroup of Operational),Data Stewards,Her Majesty's Passport Office,Registrars,,,,PR8 9PW
+Public bodies (Subgroup of Operational),Data Stewards,ONS,Registrars,,,,"NP10 8XG,PO15 5RR,SW1V 2QQ"
+Accountability,Data Stewards,PACAC,,,,,SW1A 0AA
 Accountability,Data Stewards,Other Parliamentary committees,,,,,
-Accountability,Data Stewards,National Audit Office,,,,,
-Accountability,Data Stewards,House of Commons Scrutiny Unit,,,,,
+Accountability,Data Stewards,National Audit Office,,,,,"SW1W 9SP,NE1 1RF"
+Accountability,Data Stewards,House of Commons Scrutiny Unit,House of commons postcode,,,,SW1A 0AA
 Accountability,Data Stewards,Science and technology committee,,,,,
 Accountability,Data Stewards,Public services committee,,,,,
 Accountability,Data Stewards,Transport Focus,,,,https://www.transportfocus.org.uk/,
