@@ -79,12 +79,12 @@ Operational,Data Stewards,All Government Departments incl Food Standards Agency,
 Operational,Data Stewards,Department for Work and Pensions (DWP),,,,,
 Operational,Data Stewards,Her Majesty's Revenue and Customs (HMRC),,,,,NE98 1ZZ
 Operational,Data Stewards,Alan Turing Institute,,THE ALAN TURING INSTITUTE,09512457,http://turing.ac.uk/,NW1 2DB
-Operational,Data Stewards,Scottish Environment Protection Agency,,,,,
-Operational,Data Stewards,Environment Agency,,,,,BS1 5AH
-Operational,Data Stewards,Cyfoeth Naturiol Cymru / Natural Resources Wales,,,,,
-Operational,Data Stewards,Home Office,,,,,
+Operational,Data Stewards,Scottish Environment Protection Agency,couldn't identify which one is headoffice,,,,
+Operational,Data Stewards,Environment Agency,double check postcode,,,,BS1 5AH
+Operational,Data Stewards,Cyfoeth Naturiol Cymru / Natural Resources Wales,couldn't identify which one is headoffice,,,,
+Operational,Data Stewards,Home Office,,,,,SW1P 4DF
 Operational,Data Stewards,Police,,,,,
-Operational,Data Stewards,"NI Department of Agriculture, Environment and Rural Affairs",,,,,
+Operational,Data Stewards,"NI Department of Agriculture, Environment and Rural Affairs",,,,,"BT4 3SB,BT49 9HP,BT7 2JA"
 Operational,Data Stewards,Joint Biosecurity Centre,,,,,
 Operational,Data Stewards,Local authority,,,,,
 Operational,Data Stewards,Geospatial commissions,,,,,
