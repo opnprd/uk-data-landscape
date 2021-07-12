@@ -78,7 +78,7 @@ Operational,Data Stewards,Civil service learning,,,,,
 Operational,Data Stewards,All Government Departments incl Food Standards Agency,,,,,
 Operational,Data Stewards,Department for Work and Pensions (DWP),,,,,
 Operational,Data Stewards,Her Majesty's Revenue and Customs (HMRC),,,,,NE98 1ZZ
-Operational,Data Stewards,Alan Turing Institute,,THE ALAN TURING INSTITUTE,09512457,http://turing.ac.uk/,NW1 2DB
+Operational,Data Stewards,Alan Turing Institute,,THE ALAN TURING INSTITUTE,09512457,http://turing.ac.uk/,
 Operational,Data Stewards,Scottish Environment Protection Agency,couldn't identify which one is headoffice,,,,
 Operational,Data Stewards,Environment Agency,double check postcode,,,,BS1 5AH
 Operational,Data Stewards,Cyfoeth Naturiol Cymru / Natural Resources Wales,couldn't identify which one is headoffice,,,,
@@ -89,16 +89,16 @@ Operational,Data Stewards,Joint Biosecurity Centre,,,,,
 Operational,Data Stewards,Local authority,,,,,
 Operational,Data Stewards,Geospatial commissions,,,,,
 Operational,Data Stewards,Department for international trade (DIT),,,,,SW1A 2DY
-Operational,Data Stewards,Network Rail,,Network Rail Ltd,04402220,https://www.networkrail.co.uk/,NW1 2DN
-Operational,Data Stewards,Rail Delivery Group,,RAIL DELIVERY GROUP LIMITED,08176197,https://www.raildeliverygroup.com/,EC1A 4HD
+Operational,Data Stewards,Network Rail,,Network Rail Ltd,04402220,https://www.networkrail.co.uk/,
+Operational,Data Stewards,Rail Delivery Group,,RAIL DELIVERY GROUP LIMITED,08176197,https://www.raildeliverygroup.com/,
 Public bodies (Subgroup of Operational),Data Stewards,Centre for Data Ethics and Innovation,,,,,
 Public bodies (Subgroup of Operational),Data Stewards,HM Land registry,Geospatial,,,,CR0 2AQ
-Public bodies (Subgroup of Operational),Data Stewards,Ordnance Survey,Geospatial,ORDNANCE SURVEY LIMITED,09121572,https://ordnancesurvey.co.uk/,SO16 0AS
+Public bodies (Subgroup of Operational),Data Stewards,Ordnance Survey,Geospatial,ORDNANCE SURVEY LIMITED,09121572,https://ordnancesurvey.co.uk/,
 Public bodies (Subgroup of Operational),Data Stewards,UK Hydrographic Office,Geospatial,,,,TA1 2DN
 Public bodies (Subgroup of Operational),Data Stewards,British Geological Survey,Geospatial,,,https://www.admiralty.co.uk/ukho/About-Us,NG12 5GG
 Public bodies (Subgroup of Operational),Data Stewards,Valuation Office Agency,Geospatial,,,,
 Public bodies (Subgroup of Operational),Data Stewards,Coal Authority,Geospatial,,,,NG18 4RG
-Public bodies (Subgroup of Operational),Data Stewards,GeoPlace LLP,Geospatial,GeoPlace LLP,OC359627,http://geoplace.co.uk/,SW1W 9SZ
+Public bodies (Subgroup of Operational),Data Stewards,GeoPlace LLP,Geospatial,GeoPlace LLP,OC359627,http://geoplace.co.uk/,
 Public bodies (Subgroup of Operational),Data Stewards,Met Office,Data-driven organisations,,,,EX1 3PB
 Public bodies (Subgroup of Operational),Data Stewards,Food Standards Agency,Data-driven organisations,,,https://www.food.gov.uk/,SW1H 9EX
 Public bodies (Subgroup of Operational),Data Stewards,Companies House,Data-driven organisations,,,,"CF14 3UZ,BT2 8BG,EH3 9FF"
@@ -228,10 +228,10 @@ Data Stewards,Data Stewards,Google,,GOOGLE UK LIMITED,03977902,https://www.googl
 Data Stewards,Data Stewards,Microsoft,,MICROSOFT LIMITED,01624297,https://www.microsoft.com/en-gb/about/,
 Data Stewards,Data Stewards,Uber,,UBER UK LIMITED,06654450,https://www.uber.com/gb/en/drive/,
 Data Stewards,Data Stewards,Opta,,,11584111,optasports.com,
-Data Stewards,Data Stewards,Health & Safety England,,,,https://www.hse.gov.uk/,
+Data Stewards,Data Stewards,Health & Safety England,"there are more, reginal offices",,,https://www.hse.gov.uk/,L20 7HS
 Data Stewards,Data Stewards,Amazon,,,10804351,https://aws.amazon.com/government-education/g-cloud-uk/,
 Data Stewards,Data Stewards,Ordnance Survey,,,09121572,https://www.ordnancesurvey.co.uk/,
-Data Stewards,Data Stewards,NHS Digital,,,,https://digital.nhs.uk/,
+Data Stewards,Data Stewards,NHS Digital,,,,https://digital.nhs.uk/,LS1 4AP
 Data Stewards,Data Stewards,TfL,,,06745516,https://tfl.gov.uk/,
 Data Stewards,Data Stewards,OpenStreetMap Foundation,,OpenStreetMap Foundation,05912761,https://wiki.osmfoundation.org/,
 Data Users,Data Users,Yolt,,Yolt Limited,12388821,https://www.yolt.com/,
@@ -240,7 +240,7 @@ Data Users,Data Users,OpenWrks,,Business Finance Technology Group Limited,094224
 Data Users,Data Users,OBUU,,,,https://obuu.es/,
 Data Users,Data Users,Data Catalyst,,DATA CATALYST LIMITED,12546067,https://datacatalyst.io/?gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6jPlRDhd-9Vsw7O_wiUXcqvJEHZ6p0qU354IysaGP8BJRze2XIBJmwaAuMJEALw_wcB,
 Data Users,Data Users,Google,,GOOGLE UK LIMITED,03977902,https://www.google.co.uk/,
-Data Users,Data Users,Geovation,,,,,
+Data Users,Data Users,Geovation,,,,,EC1V 7EN
 Data Enablers,Data Enablers,ODI,,OPEN DATA INSTITUTE,08030289,https://theodi.org/,
 Data Enablers,Data Enablers,Centre for Data Ethics and Innovation,,,,https://www.gov.uk/government/organisations/centre-for-data-ethics-and-innovation,
 Data Enablers,Data Enablers,Energy Systems Catapult,,ENERGY SYSTEMS CATAPULT LIMITED,08705784,https://es.catapult.org.uk/,
@@ -255,17 +255,17 @@ Data Enablers,Data Enablers,Alan Turing Institute,,THE ALAN TURING INSTITUTE,095
 Data Enablers,Data Enablers,Ada Lovelace Institute,,THE ADA LOVELACE SOCIETY LIMITED,12647691,https://www.adalovelaceinstitute.org/,
 Data Enablers,Data Enablers,Royal Academy,,,01666333,https://www.royalacademy.org.uk/,
 Data Enablers,Data Enablers,Royal Academy of Engineering,,,08038360,https://www.raeng.org.uk/,
-Data Enablers,Data Enablers,BEIS,,,,https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy,
-Data Enablers,Data Enablers,UKRI,,,,https://www.ukri.org/,
+Data Enablers,Data Enablers,BEIS,,,,https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy,"SW1H 0ET,AB10 1BJ"
+Data Enablers,Data Enablers,UKRI,,,,https://www.ukri.org/,"SN2 1FL,EC4Y 0DS,BS34 8SR"
 Data Enablers,Data Enablers,Health Data Research UK,,,10887014 ,https://www.hdruk.ac.uk/,
 Data Enablers,Data Enablers,Understanding Patient Data,,,02711000,https://understandingpatientdata.org.uk/,
 Data Enablers,Data Enablers,Noggin,,NOGGIN LIMITED,06363503,https://www.noggin.ltd.uk/,
 Data Enablers,Data Enablers,Ethos VO,,ETHOS VO LIMITED,03853277,https://www.ethosvo.org/ethos-place-ventures/,
 Data Enablers,Data Enablers,Geoxphere,,GEOXPHERE LIMITED,11348164,https://www.geoxphere.com/,
-Data Enablers,Data Enablers,Bloomberg,,,,,
-Data Enablers,Data Enablers,Thomson Reuters,,,,,
-Data Enablers,Data Enablers,CDP,,,,,
-Data Enablers,Data Enablers,Sustanalytics,,,,,
-Data Enablers,Data Enablers,Open Corporates,,,,,
+Data Enablers,Data Enablers,Bloomberg,,BLOOMBERG UK LIMITED,03430322,https://www.bloomberg.com/help/question/bloomberg-businessweek/?gclid=Cj0KCQjw0K-HBhDDARIsAFJ6UGip15xdk8iZtAAKrWNjCmw0VrBGOeWvbCB8qEU1Nhu4zmpJw_c4r84aAps4EALw_wcB,
+Data Enablers,Data Enablers,Thomson Reuters,,THOMSON REUTERS UK LIMITED,06141013,https://www.thomsonreuters.com/en.html,
+Data Enablers,Data Enablers,CDP,,CDP (UK) LTD,07282134,https://www.cdp.net/en,
+Data Enablers,Data Enablers,Sustainalytics,,SUSTAINALYTICS UK LIMITED,08660879,https://www.sustainalytics.com/,
+Data Enablers,Data Enablers,Open Corporates,,OPENCORPORATES LTD,07444723,https://opencorporates.com/,
 Data Enablers,Data Enablers,GLEIF,,,,,
-Data Enablers,Data enablers,London Stock Exhchange,,,,,
+Data Enablers,Data enablers,London Stock Exchange,,,,https://www.londonstockexchange.com/,EC4M 7LS
