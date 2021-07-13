@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <style>
+    html,
+    body {
+      height: 100%;
+      paddding: 0;
+      margin: 0;
+    }
+
+    #map {
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const map = L.map('map');
+      const baseLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+      });
+      const [
+        taxonomyData,
+        registerData,
+      ] = await Promise.all([
+        fetch('./organisation-taxonomy.geojson').then(response => response.json()),
+        fetch('./organisation-register.geojson').then(response => response.json()),
+      ]);
+      const marker = (geoJsonPoint, latlng) => {
+        const m = L.circleMarker(latlng, {
+          radius: 5,
+          riseOnHover: true,
+        })
+        return m;
+      };
+      const popup = (layer) => [
+        `${layer.feature.properties.name}`
+      ].join();
+      const bindPopTip = (feature, layer) => {
+        layer.bindTooltip(popup);
+        layer.bindPopup(popup);
+      }
+      const taxonomyLayer = L.geoJSON(taxonomyData, {
+        pointToLayer: marker,
+        style: (feature) => ({ color: 'green' }),
+        onEachFeature: bindPopTip,
+      });
+      const registerLayer = L.geoJSON(registerData, {
+        pointToLayer: marker,
+        style: (feature) => ({ color: 'blue' }),
+        onEachFeature: bindPopTip,
+      });
+
+      L.control.layers({}, { "Taxonomy-derived organisations": taxonomyLayer, "ODI register-derived organisations": registerLayer }).addTo(map);
+
+      map.fitBounds(taxonomyLayer.getBounds(), {})
+
+      baseLayer.addTo(map);
+      taxonomyLayer.addTo(map);
+      registerLayer.addTo(map);
+
+    })
+  </script>
+</body>
+
+</html>
