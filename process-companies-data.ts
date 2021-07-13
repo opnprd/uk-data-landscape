@@ -6,10 +6,7 @@ const text = await readTXT(filename);
 
 // Strip blank lines
 const cleanedText = text
-  .replace(/^(.*\n)*---.*\n/, '')
-  .split(/[\r\n]+/)
-  .filter((line: string) => line.replace(/,/g, '').length > 0)
-  .join('\n');
+  .replace(/^(.*\n)*---.*\n/, '');
 
 await writeCSV(filename, cleanedText);
 
