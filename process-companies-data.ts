@@ -5,7 +5,11 @@ const filename = Deno.args[0];
 const text = await readTXT(filename);
 
 // Strip blank lines
-const cleanedText = text.split(/[\r\n]+/).filter((line: string) => line.replace(/,/g, '').length > 0).join('\n');
+const cleanedText = text
+  .replace(/^(.*\n)*---.*\n/, '')
+  .split(/[\r\n]+/)
+  .filter((line: string) => line.replace(/,/g, '').length > 0)
+  .join('\n');
 
 await writeCSV(filename, cleanedText);
 
@@ -20,8 +24,23 @@ const splitPostcodes = (list: any[], company: any) => ([
     }))
 ]);
 
+type PostcodeLookupResponse = {
+  postcode: string;
+  longitude: string;
+  latitude: string;
+  adminDistrict: string;
+  msoa: string;
+  lsoa: string;
+}
+
 async function bulkPostcodeLookup(postcodes: any[]) {
-  return fetch('https://api.postcodes.io/postcodes/', {
+  const batches = [];
+  const batchSize = 100;
+  for (let i = 0; i < postcodes.length; i += batchSize) {
+    batches.push(postcodes.slice(i, i + batchSize));
+  }
+
+  const postcodeApiCall = async (postcodes: any): Promise<any[]> => fetch('https://api.postcodes.io/postcodes/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -31,18 +50,25 @@ async function bulkPostcodeLookup(postcodes: any[]) {
     }),
   })
     .then((response: any) => response.json())
-    .then((json: any) => json.result
-      .map((result: any) => ({
+    .then((json: any) => json.result);
+
+  return (await Promise.all(batches.map(postcodeApiCall))).flat()
+    .map((result: any) => {
+      if (!Boolean(result.result)) {
+        console.error(`Postcode ${result.query} not found`);
+        return;
+      }
+
+      return {
         postcode: result.result.postcode,
         latitude: result.result.latitude,
         longitude: result.result.longitude,
         adminDistrict: result.result.codes.admin_district,
         msoa: result.result.codes.msoa,
         lsoa: result.result.codes.lsoa,
-      })))
-    .catch((error) => {
-      console.error(error);
-    });
+      }
+    })
+    .filter(Boolean) as PostcodeLookupResponse[];
 }
 
 const lookupLocations = async (companyData: any) => {
@@ -50,20 +76,17 @@ const lookupLocations = async (companyData: any) => {
     ...(new Set(companyData.map((company: any) => company['UK Postcode'])))
   ];
   const locations = await bulkPostcodeLookup(postcodes);
-
   return companyData.map((company: any) => {
-    try {
-      const { longitude, latitude, adminDistrict, msoa, lsoa } = locations
-        .find((location: any) => location.postcode === company['UK Postcode'])
-      return {
-        ...company,
-        coordinates: [longitude, latitude],
-        adminDistrict,
-        msoa,
-        lsoa,
-      }
-    } catch(error) {
-      console.error(error);
+    const geoData = locations
+      .find((location: any) => location.postcode === company['UK Postcode']);
+    if (geoData == undefined) return;
+    const { longitude, latitude, adminDistrict, msoa, lsoa } = geoData;
+    return {
+      ...company,
+      coordinates: [longitude, latitude],
+      adminDistrict,
+      msoa,
+      lsoa,
     }
   }).filter(Boolean);
 };
