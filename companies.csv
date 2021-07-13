@@ -194,7 +194,8 @@ Users/External,Data Users,King's policy institute,,,,,WC2R 2LS
 Users/External,Data Users,Bristish Computer Society,,,,,"SN1 1BY,EC2R 7BP"
 Users/External,Data Users,Bank of England,,Bank of England,RC000042,https://www.bankofengland.co.uk/,"EC2R 8AH,EC2R 8AH,EC2R 6DA"
 Users/External,Data Users,Statistics User Forum,,,,,
-National Security,Data Stewards,GCHQ,,,,https://www.gchq.gov.uk/,xxxx
+National Security,Data Stewards,GCHQ,,,,https://www.gchq.gov.uk/,"GL51 0EX,YO12 5TQ,EX23 9JL,M2 5LN,SW1E 5LB
+"
 National Security,Data Stewards,Intelligence Analysis Profession,,,,,
 National Security,Data Stewards,National Cyber Security Centre,,,,,
 Standards,Data Stewards,Local Authority Transparency Publication,https://www.gov.uk/government/publications/local-government-transparency-code-2015,,,,
@@ -204,7 +205,7 @@ Standards,Data Stewards,INSPIRE Regulations 2009,,,,,
 Standards,Data Stewards,INSPIRE Regulations (Scotland) 2009,,,,,
 Collectors,,The many people who collect it (think clipboards etc),,,,,
 [Floating Cards],Data Enablers,British Academy,Especially Work on Data Ethics,,,,SW1Y 5AH
-[Floating Cards],Data Enablers,Royal Society,Especially Work on Data Ethics,Royal Society,RC000519,http://royalsociety.org/,xxxx
+[Floating Cards],Data Enablers,Royal Society,Especially Work on Data Ethics,Royal Society,RC000519,http://royalsociety.org/,SW1Y 5AG
 [Floating Cards],Data Enablers,OneTeamGov,,,,https://www.oneteamgov.uk/,SW1H 9AJ
 [Floating Cards],Data Enablers,UKGovCamp,,,,,
 [Floating Cards],Data Enablers,What Works Centres,,,,https://www.whatworksnetwork.org.uk/,SW1H 9EA
@@ -243,9 +244,9 @@ Data Users,Data Users,Google,,GOOGLE UK LIMITED,03977902,https://www.google.co.u
 Data Users,Data Users,Geovation,,,,,EC1V 7EN
 Data Enablers,Data Enablers,ODI,,OPEN DATA INSTITUTE,08030289,https://theodi.org/,
 Data Enablers,Data Enablers,Centre for Data Ethics and Innovation,,,,https://www.gov.uk/government/organisations/centre-for-data-ethics-and-innovation,xxxx
-Data Enablers,Data Enablers,Energy Systems Catapult,,ENERGY SYSTEMS CATAPULT LIMITED,08705784,https://es.catapult.org.uk/,xxxx
-,,Digital Catapult,,,,,xxxx
-Data Enablers,Data Enablers,Connected Places Catapult,,CONNECTED PLACES CATAPULT,11837978,https://cp.catapult.org.uk/,xxxx
+Data Enablers,Data Enablers,Energy Systems Catapult,,ENERGY SYSTEMS CATAPULT LIMITED,08705784,https://es.catapult.org.uk/,B4 6BS
+,,Digital Catapult,,,,,"NW1 2RA,BN1 4GH,SR1 1PB,BT2 8HS"
+Data Enablers,Data Enablers,Connected Places Catapult,,CONNECTED PLACES CATAPULT,11837978,https://cp.catapult.org.uk/,"EC1R 0BE,MK9 1BP,G1 1RD,LS2 3AA"
 Data Enablers,Data Enablers,Microsoft,,MICROSOFT LIMITED,01624297,https://www.microsoft.com/en-gb/about/,
 Data Enablers,Data Enablers,Google,,GOOGLE UK LIMITED,03977902,https://www.google.co.uk/,
 Data Enablers,Data Enablers,Amazon (Cloud),could also be Amazon UK Services Ltd?,AMAZON WEB SERVICES UK LIMITED,08650665,https://aws.amazon.com/government-education/g-cloud-uk/,
@@ -263,7 +264,7 @@ Data Enablers,Data Enablers,Understanding Patient Data,,,02711000,https://unders
 Data Enablers,Data Enablers,Noggin,,NOGGIN LIMITED,06363503,https://www.noggin.ltd.uk/,
 Data Enablers,Data Enablers,Ethos VO,,ETHOS VO LIMITED,03853277,https://www.ethosvo.org/ethos-place-ventures/,
 Data Enablers,Data Enablers,Geoxphere,,GEOXPHERE LIMITED,11348164,https://www.geoxphere.com/,
-,,Health Foundation,,,,,xxxx
+,,Health Foundation,,,,,EC4Y 8AP
 Data Enablers,Data Enablers,Bloomberg,,BLOOMBERG UK LIMITED,03430322,https://www.bloomberg.com/help/question/bloomberg-businessweek/?gclid=Cj0KCQjw0K-HBhDDARIsAFJ6UGip15xdk8iZtAAKrWNjCmw0VrBGOeWvbCB8qEU1Nhu4zmpJw_c4r84aAps4EALw_wcB,
 Data Enablers,Data Enablers,Thomson Reuters,,THOMSON REUTERS UK LIMITED,06141013,https://www.thomsonreuters.com/en.html,
 Data Enablers,Data Enablers,CDP,,CDP (UK) LTD,07282134,https://www.cdp.net/en,
