@@ -2,6 +2,7 @@ import { readTXT, writeCSV, readCSV, writeJSON } from 'https://deno.land/x/flat@
 
 const filename = Deno.args[0];
 const outputFilename = filename.replace(/\..+?$/, '.geojson');
+console.log({ filename, outputFilename });
 
 const text = await readTXT(filename);
 
