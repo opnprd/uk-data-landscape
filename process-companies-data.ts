@@ -18,7 +18,7 @@ const splitPostcodes = (list: any[], company: any) => ([
       ...company,
       'UK Postcode': postcode,
     }))
-  ]);
+]);
 
 async function bulkPostcodeLookup(postcodes: any[]) {
   return fetch('https://api.postcodes.io/postcodes/', {
@@ -39,7 +39,10 @@ async function bulkPostcodeLookup(postcodes: any[]) {
         adminDistrict: result.result.codes.admin_district,
         msoa: result.result.codes.msoa,
         lsoa: result.result.codes.lsoa,
-      })));
+      })))
+    .catch((error) => {
+      console.error(error);
+    });
 }
 
 const lookupLocations = async (companyData: any) => {
@@ -49,16 +52,20 @@ const lookupLocations = async (companyData: any) => {
   const locations = await bulkPostcodeLookup(postcodes);
 
   return companyData.map((company: any) => {
-    const { longitude, latitude, adminDistrict, msoa, lsoa } = locations
-      .find((location: any) => location.postcode === company['UK Postcode'])
-    return {
-      ...company,
-      coordinates: [ longitude, latitude ],
-      adminDistrict,
-      msoa,
-      lsoa,
+    try {
+      const { longitude, latitude, adminDistrict, msoa, lsoa } = locations
+        .find((location: any) => location.postcode === company['UK Postcode'])
+      return {
+        ...company,
+        coordinates: [longitude, latitude],
+        adminDistrict,
+        msoa,
+        lsoa,
+      }
+    } catch(error) {
+      console.error(error);
     }
-  })
+  }).filter(Boolean);
 };
 
 const createGeoJsonFeature = (company: any) => ({
