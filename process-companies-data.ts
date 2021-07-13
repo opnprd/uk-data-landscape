@@ -2,8 +2,6 @@ import { readTXT, writeCSV, readCSV, writeJSON } from 'https://deno.land/x/flat@
 
 const filename = Deno.args[0];
 const outputFilename = filename.replace(/\..+?$/, '.geojson');
-console.log({ filename, outputFilename });
-
 const text = await readTXT(filename);
 
 // Strip blank lines
@@ -14,6 +12,8 @@ const cleanedText = text
   .join('\n');
 
 await writeCSV(filename, cleanedText);
+
+console.log({ filename, outputFilename, before: text.length, after: cleanedText.length });
 
 const locatedCompanies = (company: any) => company['UK Postcode'];
 const splitPostcodes = (list: any[], company: any) => ([
