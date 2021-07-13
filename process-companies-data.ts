@@ -1,6 +1,7 @@
 import { readTXT, writeCSV, readCSV, writeJSON } from 'https://deno.land/x/flat@0.0.11/mod.ts'
 
 const filename = Deno.args[0];
+const outputFilename = filename.replace(/\..+?$/, '.geojson');
 
 const text = await readTXT(filename);
 
@@ -116,4 +117,4 @@ const geoJsonData = {
   features: (await lookupLocations(companyData)).map(createGeoJsonFeature)
 };
 
-await writeJSON('uk-landscape-non-commercial.geojson', geoJsonData);
+await writeJSON(outputFilename, geoJsonData);

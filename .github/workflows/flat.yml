@@ -21,5 +21,5 @@ jobs:
         uses: githubocto/flat@v3
         with:
           http_url: https://docs.google.com/spreadsheets/u/0/d/1O-lVLR-QVykZ-cq7PlpLzjZGNpEcWaoq5b-ZnGpZWR0/export?format=csv&id=1O-lVLR-QVykZ-cq7PlpLzjZGNpEcWaoq5b-ZnGpZWR0&gid=0
-          downloaded_filename: companies.csv
+          downloaded_filename: organisation-taxonomy.csv
           postprocess: ./process-companies-data.ts

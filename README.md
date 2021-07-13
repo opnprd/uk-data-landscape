@@ -7,7 +7,7 @@ The data is drawn from a Google Sheet which is maintained by the team ODI Leeds,
 [work conducted by Gavin Freeguard](https://docs.google.com/document/d/1URoTu0S8MtyPEQlxue5ArMpi2IJOn67DdmiXwz__QQo/edit).
 
 We've tried to provide one or more postcodes for each public sector body. The downloaded data is then stored
-in the `companies.csv` file in this repo using a [Flat Data](https://octo.github.com/projects/flat-data) action.
+in the `organisation-taxonomy.csv` file in this repo using a [Flat Data](https://octo.github.com/projects/flat-data) action.
 
 This CSV file is post-processed to geocode the data for presentation on a map using the
 [Postcodes.io](https://postcodes.io) service.
