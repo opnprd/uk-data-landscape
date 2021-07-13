@@ -1,20 +1,15 @@
 import { readTXT, writeCSV, readCSV, writeJSON } from 'https://deno.land/x/flat@0.0.11/mod.ts'
 
 const filename = Deno.args[0];
-const cleanedCsv = filename.replace(/\..+?$/, '.cleaned.csv');
+// const cleanedCsv = filename.replace(/\..+?$/, '.cleaned.csv');
 const outputFilename = filename.replace(/\..+?$/, '.geojson');
 const text = await readTXT(filename);
 
-// Strip blank lines
-const cleanedText = text
-  .replace(/^(.*\n)*---.*\n/, '')
-  .split(/[\r\n]+/)
-  .filter((line: string) => line.replace(/,/g, '').length > 0)
-  .join('\n');
+// Strip header
+let cleanedText = text.split(/---.*/m).pop();
+if (cleanedText === undefined) cleanedText = text;
 
-await writeCSV(cleanedCsv, cleanedText);
-
-console.log({ filename, outputFilename, before: text.length, after: cleanedText.length });
+await writeCSV(filename, cleanedText.trim());
 
 const locatedCompanies = (company: any) => company['UK Postcode'];
 const splitPostcodes = (list: any[], company: any) => ([
@@ -110,7 +105,7 @@ const createGeoJsonFeature = (company: any) => ({
   }
 });
 
-const companyData = (await readCSV(cleanedCsv))
+const companyData = (await readCSV(filename))
   .filter(locatedCompanies)
   .reduce(splitPostcodes, []);
 
