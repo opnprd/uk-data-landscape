@@ -63,14 +63,17 @@
         layer.bindTooltip(popup);
         layer.bindPopup(popup);
       }
-      const taxonomyLayer = L.markerClusterGroup();
+      const makeClusterLayer = () => L.markerClusterGroup({
+        showCoverageOnHover: false,
+      });
+      const taxonomyLayer = makeClusterLayer();
       L.geoJSON(taxonomyData, {
         pointToLayer: marker,
         style: (feature) => ({ color: 'green' }),
         onEachFeature: bindPopTip,
       }).addTo(taxonomyLayer);
 
-      const registerLayer = L.markerClusterGroup();
+      const registerLayer = makeClusterLayer();
       L.geoJSON(registerData, {
         pointToLayer: marker,
         style: (feature) => ({ color: 'blue' }),
