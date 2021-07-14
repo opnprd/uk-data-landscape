@@ -17,19 +17,31 @@
     html,
     body {
       height: 100%;
-      paddding: 0;
+      padding: 0;
       margin: 0;
     }
 
     #map {
       height: 100%;
     }
+
+    #info_text {
+      background: white;
+      max-width: 50%;
+      padding: 1em;
+      box-shadow: 0 0 10px 10px #5e5e5e8f;
+      border-radius: 5px;
+    }
+
+    p {
+      margin: 0;
+      padding-bottom: 0.5em;
+    }
   </style>
 </head>
 
 <body>
   <div id="map"></div>
-
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
@@ -80,13 +92,49 @@
         onEachFeature: bindPopTip,
       }).addTo(registerLayer);
 
-      L.control.layers({}, { "Taxonomy-derived organisations": taxonomyLayer, "ODI register-derived organisations": registerLayer }).addTo(map);
+      const keyCircle = (c = 'black') => `<svg viewBox='-2 -2 24 24' width=10><circle style="fill-opacity: 0.2; stroke: ${c}; fill: ${c}; stroke-width: 3; stroke-linecap: round;" cx=10 cy=10 r=10></svg>`;
+      L.control.layers(
+        {},
+        {
+          [`${keyCircle('green')} Taxonomy-derived organisations`]: taxonomyLayer,
+          [`${keyCircle('blue')} ODI register-derived organisations`]: registerLayer,
+        },
+        {
+          collapsed: false,
+        }
+      ).addTo(map);
 
       map.fitBounds(taxonomyLayer.getBounds(), {})
 
       baseLayer.addTo(map);
       taxonomyLayer.addTo(map);
       registerLayer.addTo(map);
+
+      L.Control.textbox = L.Control.extend({
+        onAdd: function (map) {
+          var text = L.DomUtil.create('div');
+          text.id = "info_text";
+          text.innerHTML = `
+<p>This map is part of <a href="https://odileeds.org/projects/uk-data-landscape/" rel="nofollow">ODI Leeds’ work on the UK Data Landscape</a>
+which is done in collaboration with <a href="https://theodi.org/article/building-a-digital-picture-of-the-uks-data-landscape-data-ecosystem-project-launched/" rel="nofollow">The Open Data Institute</a>
+and <a href="https://thedatacity.com/" rel="nofollow">The Data City</a>.
+The data used for the mapping is a <a href="https://docs.google.com/spreadsheets/d/1O-lVLR-QVykZ-cq7PlpLzjZGNpEcWaoq5b-ZnGpZWR0/edit?usp=sharing" rel="nofollow">community reviewed Google Sheet</a> containing data organisations, primarily non-businesses and public organisations based on
+<a href="https://jamboard.google.com/d/1bZdsQRslLxLTWoNKCSPk9RpRbIEZIsuvU5yaRodPYQE/viewer" rel="nofollow">Gavin Freeguards’ Government Ecosystem work</a>, and
+<a href="https://theodi.org/article/the-data-institutions-register/" rel="nofollow">the Data Institutions Register developed by Jack Hardinges and Joe Massey</a>.</p>
+<p>The map visualises the centralised nature of the UK data landscape as the majority of the listed organisations can be found in London.
+One factor playing into this may be the predominance of government bodies and organisations working closely with these in the capital.</p>
+<p>While we’ve done our best to review the data mapped here, it was largely created by people in our community. This means that some information
+may be missing, duplicated or even incorrect. But it also means that you can help us fill in the gaps of the UK Data Landscape on our
+<a href="https://docs.google.com/spreadsheets/d/1O-lVLR-QVykZ-cq7PlpLzjZGNpEcWaoq5b-ZnGpZWR0/edit?usp=sharing" rel="nofollow">Google Sheet</a>!</p>
+`
+          return text;
+        },
+        onRemove: function (map) {
+          // Nothing to do here
+        }
+      });
+      L.control.textbox = function (opts) { return new L.Control.textbox(opts); }
+      L.control.textbox({ position: 'bottomleft' }).addTo(map);
     })
   </script>
 </body>
